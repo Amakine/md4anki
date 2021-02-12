@@ -1,0 +1,1340 @@
+		<styletype="text/css" rel="stylesheet">
+    code.hidden-code {
+        color: rgb(0,255,0,0) !important;
+        disply: inline !important;
+    }
+    code.hidden-code:hover {
+        color: white !important;
+    }
+    .toggle-button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        height: 50px;
+        z-index: 9999;
+        background-color: var(--bg-color5);
+        font-family: "Helvetica Neue", Helvetica, Arial
+        color: var(--text-color1);
+        border: none;
+        border-radius: 7px;
+        margin: 0;
+    }
+</style>
+<script>
+var hideCode = false;
+function hideSpanish() {
+    hideCode = (!hideCode);
+    let code  = document.getElementsByTagName("code");
+    for (let i = 0; i < code.length; i++)  
+        code[i].classList.toggle("hidden-code", hideCode);
+}
+function toggleHide(dom)  {
+    console.log("toggle");
+    dom.classList.toggle("hidden-code");
+}
+window.onload = function() {
+    console.log("onload");
+    let code  = document.getElementsByTagName("code");
+    for (let i = 0; i < code.length; i++)
+        code[i].setAttribute("onclick", "toggleHide(this)");
+}
+document.addEventListener('keydown', function(event) {
+    let key = String.fromCharCode(event.keyCode);
+    if (key == 'T' || key == 'H') hideSpanish();
+})
+</script>
+<p><button class="toggle-button" onclick="hideSpanish()">Toggle translations</button></p>
+<p>Käännökset voi näyttää tai piilottaa “Toggle translations”-napilla (oikeassa alareunassa) tai klikkaamalla tyhjää käännöstä:</p>
+<p>auto <code>coche, m</code>
+päivä <code>día, m</code></p>
+
+español---muistiinpanot	<h1>Español- muistiinpanot</h1>
+	<p><em>Artunselkeät muttei välttämättä luotettavat muistiinpanot, päivittyy kurssin edetessä (ehkä). Mitään vastuuta puuttuvista aksenttimerkeistä jne ei oteta!</em></p>
+
+español---muistiinpanot::tunti-1	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+	
+tunti-1-::kysymykset-ja-sävelkorkeus	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Kysymykset ja sävelkorkeus</h3>
+	<p>Carlosi tu (monotonisesti)
+<code>Carlos ja sinä</code></p>
+<p>Carlos I tu (“I” with high pitch)
+<code>Carlos, entä sinä?</code></p>
+
+tunti-1-::tervehdykset	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Tervehdykset</h3>
+	<p>Buenosdías!
+<code>aamulla / ennen päivällistä</code></p>
+<p>Buenas tardes!
+<code>iltapäivällä / päivällisen jälkeen</code></p>
+<p>Buenas noches!
+<code>illalla / illallisen jälkeen / hyvää yötä</code></p>
+
+tervehdykset::esimerkkitervehdykset	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Tervehdykset</h3>
+<h4>Esimerkkitervehdykset</h4>
+	<p>Quetal? <code>What's up?</code>
+Cómo estás? <code>How are you?</code>
+Cómo te llamas? <code>What's your name?</code></p>
+
+tunti-1-::määräiset-artikkelit	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Määräiset artikkelit</h3>
+	<table><thead>
+<tr>
+<th></th>
+<th>Yksikkö</th>
+<th>Monikko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maskuliini</td>
+<td><code>El</code></td>
+<td><code>Los</code></td>
+</tr>
+<tr>
+<td>Feminiini</td>
+<td><code>La</code></td>
+<td><code>Las</code></td>
+</tr>
+</tbody>
+</table>
+
+tunti-1-::paikka-ja-sijainti-(en,-a,-de)	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Paikka ja sijainti (en, a, de)</h3>
+	<table><thead>
+<tr>
+<th>en</th>
+<th><code>in, at (-ssa, -ssä, -lla, -llä)</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td><code>to (jonnekin, -lle)</code></td>
+</tr>
+<tr>
+<td>de</td>
+<td><code>from (-sta, -stä)</code></td>
+</tr>
+</tbody>
+</table>
+
+tunti-1-::al-&-del	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Al &amp; Del</h3>
+	<blockquote><p>a + el =&gt; <code>al</code></p>
+<p>a + la == <code>a la</code></p>
+</blockquote>
+<blockquote>
+<p>de + el =&gt; <code>del</code></p>
+<p>de + la == <code>de la</code></p>
+</blockquote>
+
+tunti-1-::ser---olla	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Ser - olla</h3>
+	<table><thead>
+<tr>
+<th>olen</th>
+<th><code>soy</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>olet</td>
+<td><code>eres</code></td>
+</tr>
+<tr>
+<td>on</td>
+<td><code>es</code></td>
+</tr>
+<tr>
+<td>olemme</td>
+<td><code>somos</code></td>
+</tr>
+<tr>
+<td>olette</td>
+<td><code>sois</code></td>
+</tr>
+<tr>
+<td>ovat</td>
+<td><code>son</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>SER: pysyvät tilat</p>
+<p>vs.</p>
+<p>ESTAR: muuttuvat tilat</p>
+</blockquote>
+
+ser---olla::uses-of-ser	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Ser - olla</h3>
+<h4>Uses of ser</h4>
+	<ul><li>date / time</li>
+<li><u>place of origin</u></li>
+<li><u>occupation</u></li>
+<li><u>nationality</u></li>
+<li>religious or political affiliation</li>
+<li>material something is made of</li>
+<li>possession</li>
+<li><u>relationship of one person</u></li>
+<li><u>essential qualities</u></li>
+</ul>
+
+ser---olla::esimerkit	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Ser - olla</h3>
+<h4>Esimerkit</h4>
+	<p>Olensuomalainen <code>Soy finlandes(a)</code></p>
+<p>Olen opiskelija <code>Soy estudiante</code></p>
+<p>Olen Tampereelta <code>Soy de Tampere</code></p>
+<p>Olen espanjan opettaja <code>Soy profesor de Español</code></p>
+<p>Carlos on veljeni <code>Carlos es mi hermano</code></p>
+<p>Einstein on älykäs <code>Einstein es intelligente</code></p>
+<p>Olen pitkä <code>Soy alto</code></p>
+<p>Talo on valkoinen <code>La casa es blanca</code></p>
+<p>Madrid on Espanjan pääkaupunki
+<code>Madrid es la capital de España</code> (<code>place of origin</code>)</p>
+<p>Madrid on Espanjassa
+<code>Madrid está en España</code> (<code>location</code>)</p>
+
+tunti-1-::persoonapronominit	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Persoonapronominit</h3>
+	<table><thead>
+<tr>
+<th>I</th>
+<th><code>Yo</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>You</td>
+<td><code>Tu</code></td>
+</tr>
+<tr>
+<td>He</td>
+<td><code>Èl</code></td>
+</tr>
+<tr>
+<td>She</td>
+<td><code>Ella</code></td>
+</tr>
+<tr>
+<td>You (singular, formal)</td>
+<td><code>Usted</code></td>
+</tr>
+<tr>
+<td>We (men or mixed)</td>
+<td><code>Nosotros</code></td>
+</tr>
+<tr>
+<td>We (all women)</td>
+<td><code>Nosotras</code></td>
+</tr>
+<tr>
+<td>You (men or mixed)</td>
+<td><code>Vosotros</code></td>
+</tr>
+<tr>
+<td>You (all women)</td>
+<td><code>Vosotras</code></td>
+</tr>
+<tr>
+<td>They (men or mixed)</td>
+<td><code>Ellos</code></td>
+</tr>
+<tr>
+<td>They (all women)</td>
+<td><code>Ellas</code></td>
+</tr>
+<tr>
+<td>You (plural, formal)</td>
+<td><code>Ustedes</code></td>
+</tr>
+</tbody>
+</table>
+
+tunti-1-::pronomini-+-olla	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 1</h2>
+<h3>Pronomini + olla</h3>
+	<table><thead>
+<tr>
+<th>I am</th>
+<th>Yo soy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>You are</td>
+<td><code>Tu eres</code></td>
+</tr>
+<tr>
+<td>He is</td>
+<td><code>Èl es</code></td>
+</tr>
+<tr>
+<td>She is</td>
+<td><code>Ella es</code></td>
+</tr>
+<tr>
+<td>We are</td>
+<td><code>Nosotros somos</code></td>
+</tr>
+<tr>
+<td>You are</td>
+<td><code>Vosotros sois</code></td>
+</tr>
+<tr>
+<td>They are</td>
+<td><code>Ellos / Ellas son</code></td>
+</tr>
+</tbody>
+</table>
+
+español---muistiinpanot::tunti-2---ääntäminen	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+	
+tunti-2---ääntäminen::z	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>Z</h3>
+	<p>Za[<code>Sa</code>]
+Ze [<code>Se</code>]
+Zi  [<code>Si</code>]
+Zo [<code>So</code>]
+Zu [<code>Su</code>]</p>
+
+tunti-2---ääntäminen::c	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>C</h3>
+	<p>Ca[<code>Ka</code>]
+<strong>Ce</strong> [<code>Se</code>]   &lt;==
+<strong>Ci</strong>  [<code>Si</code>]   &lt;==
+Co [<code>Ko</code>]
+Cu [<code>Ku</code>]</p>
+<p><strong><u>Esim:</u></strong></p>
+<p><strong>Ca</strong>sa [<code>Kasa</code>]
+<strong>Ca</strong>za [<code>Kaza</code>]
+<strong>Cu</strong>ba [<code>Kuba</code>]
+<strong>Co</strong>lumbia [<code>Kolumbia</code>]</p>
+<p><strong>Ce</strong>silia [<code>Sesilia</code>]
+<strong>Ci</strong>elo    [<code>Sielo</code>]</p>
+
+tunti-2---ääntäminen::que-/-qui	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>Que / Qui</h3>
+	<p>Mitenkirjoitetaan [<code>Ke</code>] tai [<code>Ki</code>]?
+=&gt; <strong>Que &amp; Qui</strong></p>
+<p>Que  [<code>Ke</code>]
+Qui   [<code>Ki</code>]</p>
+<p><strong><u>Esim:</u></strong></p>
+<p><strong>qui</strong>ero  [<code>Kiero</code>]
+Ra<strong>que</strong>l  [<code>Rakel</code>]
+izquierda [<code>Iskierda</code>]
+Peluquería [<code>Pelukeria</code>]</p>
+
+tunti-2---ääntäminen::rr	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>RR</h3>
+	<p>Pe<strong>rr</strong>o:pe<code>rrr</code>kele    =&gt; peasants
+vs.
+pe<code>rr</code>o pehmeästi =&gt; yläluokka</p>
+
+tunti-2---ääntäminen::ya,-lla	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>Ya, LLa</h3>
+	<p>Ya== LLa [<code>Ja</code>]
+Ye == LLe [<code>Je</code>]
+Yi  == LLi  [ <code>Ji</code>]
+Yo == LLo [<code>Jo</code>]
+Yu == LLu [<code>Ju</code>]</p>
+<p>LLa on kovempi kuin Ya (mutta ei paljoa merkitystä)</p>
+<p><strong><u>Esim:</u></strong></p>
+<p>La cebo<strong>lla</strong>  [<code>seboja</code>]
+Amari<strong>llo</strong>    [<code>Amarijo</code>]</p>
+
+tunti-2---ääntäminen::x	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>X</h3>
+	<p>Me<strong>x</strong>ico[<code>Mehiko</code>]
+<strong>X</strong>alapa    [<code>Halapa</code>]</p>
+
+tunti-2---ääntäminen::j	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>J</h3>
+	<p>Ja[<code>Ha</code>]
+Je [<code>He</code>]
+Ji  [<code>Hi</code>]
+Jo [<code>Ho</code>]
+Ju [<code>Hu</code>]</p>
+<p><strong><u>Esim:</u></strong></p>
+<p>Jalapeno [<code>Halapeno</code>]</p>
+
+tunti-2---ääntäminen::ñ	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>Ñ</h3>
+	<p>Ña[<code>Nja</code>]
+Ñe [<code>Nje</code>]
+Ñi  [<code>Nji</code>]
+Ño [<code>Njo</code>]</p>
+
+tunti-2---ääntäminen::g	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>G</h3>
+	<p>Ga[<code>Ga</code>]
+Go   [<code>Go</code>]
+Gu   [<code>Gu</code>]
+<strong>Ge</strong>   [<code>He</code>] &lt;=
+<strong>Gi</strong>    [<code>Hi</code>] &lt;=</p>
+<p><strong><u>Esim:</u></strong></p>
+<p>Los An<strong>ge</strong>les [<code>Los Anheles</code>]</p>
+
+tunti-2---ääntäminen::gue-/-gui	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>Gue / Gui</h3>
+	<p>Mitenkirjoitetaan [<code>Ge</code>] tai [<code>Gi</code>] ?</p>
+<p>=&gt; <strong>Gue &amp; Gui</strong></p>
+<p>Gue [<code>Ge</code>]
+Gui  [<code>Gi</code>]</p>
+<p><strong><u>Esim:</u></strong></p>
+<p><strong>Gui</strong>llermo [<code>Gijermo</code>]
+Mi<strong>gue</strong>l Án<strong>ge</strong>l [<code>Migel Anhel</code>]</p>
+
+tunti-2---ääntäminen::h	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 2 - Ääntäminen</h2>
+<h3>H</h3>
+	<p>Ahora[<code>Aora</code>] (<code>kahden vokaalin välissä</code>)</p>
+<p>La zanahoria [<code>La zanaoria</code>]</p>
+<p>Ahí [<code>Ai</code>]</p>
+
+español---muistiinpanot::tunti-3	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+	
+tunti-3::hay---there-is	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Hay - There is</h3>
+	<p>Thereis a monument in the park
+<code>Hay un monumento en el parque</code></p>
+<p>There is two monuments in the park
+<code>Hay dos monumentos en el parque</code></p>
+<p>There’s no dishwasher
+<code>No hay lavadora</code></p>
+
+tunti-3::estar---olla-/-sijaita	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Estar - olla / sijaita</h3>
+	<table><thead>
+<tr>
+<th>Olen</th>
+<th><code>Estoy</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Olet</td>
+<td><code>Estás</code></td>
+</tr>
+<tr>
+<td>Hän on</td>
+<td><code>Está (él/ella, usted)</code></td>
+</tr>
+<tr>
+<td>Olemme</td>
+<td><code>Estamos</code></td>
+</tr>
+<tr>
+<td>Olette</td>
+<td><code>Estáis</code></td>
+</tr>
+<tr>
+<td>Ovat</td>
+<td><code>Están (ellos/-as, ustedes)</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>SER: pysyvät tilat</p>
+<p>vs.</p>
+<p>ESTAR: muuttuvat tilat</p>
+</blockquote>
+
+estar---olla-/-sijaita::uses-of-estar	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Estar - olla / sijaita</h3>
+<h4>Uses of ESTAR</h4>
+	<ul><li><u>geographic or physical location</u></li>
+<li><u>state or condition</u></li>
+<li>progressive tenses</li>
+<li>state or condition</li>
+</ul>
+
+estar---olla-/-sijaita::esimerkkejä	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Estar - olla / sijaita</h3>
+<h4>Esimerkkejä</h4>
+	<p>Olet<code>Tu estás</code>
+Olet (teitittely) <code>Usted está</code></p>
+<p>Olette <code>Vosotros estáis</code>
+Olette (teitittely) <code>Ustedes están</code></p>
+<p>Hän on <code>Èl/ella está</code>
+He ovat <code>Ellos/Ellas están</code></p>
+<p>Olen sairas <code>Estoy enferm(o/a)</code></p>
+<p>Miten hän voi <code>Cómo esta?</code></p>
+<p>Millainen hän on <code>Cómo es?</code></p>
+<p>Miguel is at home <code>Miguel esta en Casa</code></p>
+<p>Te olette Porissa <code>Vosotros estáis en Pori</code></p>
+<p>The door is open <code>La puerta está abierta</code></p>
+
+estar---olla-/-sijaita::hay-vs.-estar	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Estar - olla / sijaita</h3>
+<h4>Hay vs. estar</h4>
+	<p>There’s<u><strong>a red car</strong></u> on the street
+<code>Hay un coche rojo en la calle.</code></p>
+<p>VS.</p>
+<p><u><strong>The red car</strong></u> is on the street
+<code>El coche rojo está en la calle.</code></p>
+
+tunti-3::tener---olla-jollakulla,-omistaa-(to-have)	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Tener - olla jollakulla, omistaa (to have)</h3>
+	<table><thead>
+<tr>
+<th>I have</th>
+<th><code>Tengo</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>You have</td>
+<td><code>Tienes</code></td>
+</tr>
+<tr>
+<td>He/she has</td>
+<td><code>Tiene (él, ella, usted)</code></td>
+</tr>
+<tr>
+<td>We have</td>
+<td><code>Tenemos</code></td>
+</tr>
+<tr>
+<td>You have (plural)</td>
+<td><code>Tenéis</code></td>
+</tr>
+<tr>
+<td>They have</td>
+<td><code>Tienen (ellos, -as, ustedes)</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>Artikkelit <code>un</code>, <code>una</code> jätetään vain jos korostetaan lukua yksi</em></p>
+
+tener---olla-jollakulla,-omistaa-(to-have)::tener-esimerkit	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Tener - olla jollakulla, omistaa (to have)</h3>
+<h4>Tener esimerkit</h4>
+	<p>Doyou have a car? <code>Tienes coche?</code>
+Do, I do not. <code>No, no tengo coche</code></p>
+<p>I have a brother <code>Tengo un hermano</code></p>
+
+tunti-3::viikonpäivät	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Viikonpäivät</h3>
+	<p>Maanantai<code>Lunes</code></p>
+<p>Tiistai <code>Martes</code></p>
+<p>Keskiviikko <code>Miércoles</code></p>
+<p>Torstai <code>Jueves</code></p>
+<p>Perjantai <code>Viernes</code></p>
+<p>Lauantai <code>Sábado</code></p>
+<p>Sunnuntai <code>Domingo</code></p>
+
+tunti-3::kuukaudet	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Kuukaudet</h3>
+	<p>Tammikuu<code>Enero</code></p>
+<p>Helmikuu <code>Febrero</code></p>
+<p>Maaliskuu <code>Marzo</code> [<code>Marso/Marzo</code>]</p>
+<p>Huhtkuui <code>Abril</code></p>
+<p>Toukokuu  <code>Mayo</code> [<code>Maio</code>]</p>
+<p>Kesäkuu  <code>Junio</code> [<code>Hunio</code>]</p>
+<p>Heinäkuu <code>Julio</code> [<code>Hulio</code>]</p>
+<p>Elokuu <code>Agosto</code> [<code>Agosto</code>]</p>
+<p>Syyskuu  <code>Septiembre</code></p>
+<p>Lokakuu <code>Octubre</code></p>
+<p>Marraskuu  <code>Noviembre</code></p>
+<p>Joulukuu <code>Diciembre</code></p>
+
+tunti-3::ser-vs.-estar	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>SER vs. ESTAR</h3>
+	<ul><li>
+<p>progressive tenses <code>estar</code></p>
+</li>
+<li>
+<p>date / time <code> _soy_</code></p>
+</li>
+<li>
+<p><u>place of origin</u> <code> _soy_</code></p>
+</li>
+<li>
+<p><u>occupation</u> <code> _soy_</code></p>
+</li>
+<li>
+<p><u>state or condition</u> <code>estar</code></p>
+</li>
+<li>
+<p><u>nationality</u> <code> _soy_</code></p>
+</li>
+<li>
+<p>religious or political affiliation <code> _soy_</code></p>
+</li>
+<li>
+<p>material something is made of <code> _soy_</code></p>
+</li>
+<li>
+<p><u>geographic or physical location</u> <code>estar</code></p>
+</li>
+<li>
+<p>possession <code> _soy_</code></p>
+</li>
+<li>
+<p><u>relationship of one person</u> <code> _soy_</code></p>
+</li>
+<li>
+<p><u>essential qualities</u> <code> _soy_</code></p>
+</li>
+</ul>
+
+tunti-3::numerot	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Numerot</h3>
+	
+numerot::1---10	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Numerot</h3>
+<h4>1 - 10</h4>
+	<ol><li><code>Uno</code></li>
+<li><code>Dos</code></li>
+<li><code>Tres</code></li>
+<li><code>Cuatro</code> (<code>quatro väärin!!</code>)</li>
+<li><code>Cinco</code></li>
+<li><code>Seis</code></li>
+<li><code>Siete</code></li>
+<li><code>Ocho</code></li>
+<li><code>Nueve</code></li>
+<li><code>Diez</code></li>
+</ol>
+
+numerot::11---20	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Numerot</h3>
+<h4>11 - 20</h4>
+	<olstart="11">
+<li>
+<p><code>Once</code></p>
+</li>
+<li>
+<p><code>Doce</code></p>
+</li>
+<li>
+<p><code>Trece</code></p>
+</li>
+<li>
+<p><code>Catorce</code></p>
+</li>
+<li>
+<p><code>Quince</code></p>
+</li>
+<li>
+<p><code>Dieciséis</code></p>
+</li>
+<li>
+<p><code>Diecisiete</code></p>
+</li>
+<li>
+<p><code>Dieciocho</code></p>
+</li>
+<li>
+<p><code>Diecinueve</code></p>
+</li>
+<li>
+<p><code>Veinte</code></p>
+</li>
+</ol>
+
+tunti-3::paikka-ja-sijainti-2	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Paikka ja sijainti 2</h3>
+	<p>Edessä<code>Delante (de)</code></p>
+<p>Takana <code>Detrás (de)</code></p>
+<p>Vieressä <code>Al lado (de)</code></p>
+<p>Välissä <code>Entre</code></p>
+<p>Alla <code>Debajo (de)</code></p>
+<p>Päällä <code>Sobre</code></p>
+<p>Lähellä <code>Cerca (de)</code></p>
+<p>Kaukana <code>Lejos (de)</code></p>
+<p>Vastapäätä <code>Enfrente (de)</code></p>
+<p>päässä/lopussa <code>Al final (de)</code></p>
+<p>päällä, yläpuolella, <code>Encima (de)</code></p>
+<p>Oikealle <code>A la derecha (de)</code></p>
+<p>Vasemmalle <code>A la izquierda (de)</code></p>
+<p>Ympärillä <code>Alrededor (de)</code></p>
+<blockquote>
+<p>‘<strong>encima de</strong>’ is closer to ‘on top of’,
+‘<strong>sobre</strong>’ is a bit more vague, basically meaning ‘over’ <strong>or</strong> ‘above’</p>
+</blockquote>
+
+tunti-3::sekalaisia	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Sekalaisia</h3>
+	<p>luckily<code>menos mal</code></p>
+<p>certainly, by the way <code>por cierto</code></p>
+<p>nice <code>majo</code></p>
+<p>at least <code>por lo menos</code></p>
+<p>at the moment, for the time being <code>de momento</code></p>
+
+sekalaisia::cuál	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 3</h2>
+<h3>Sekalaisia</h3>
+<h4>Cuál</h4>
+	<p>Cuál<code>which (toimii usein kuten what)</code></p>
+<p>What’s your surname?
+<code>Cuál es tu apellido</code></p>
+<p>What’s your home address?
+<code>Cuál es tu dirección?</code></p>
+<h4>Así se dice</h4>
+<p>Mitä opiskelet <code>Cuál es tu carrera</code></p>
+<p>tener que  <code>have to</code>
+tengo que <code>I have to</code></p>
+<p>Otammeko toisen kahvin?
+<code>Tomamos otro cafe?</code></p>
+
+español---muistiinpanot::tunti-4	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 4</h2>
+	
+tunti-4::verbien-taivutusmuodot	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 4</h2>
+<h3>Verbien taivutusmuodot</h3>
+	<table><thead>
+<tr>
+<th></th>
+<th>HABL<u>AR</u></th>
+<th>COM<u>ER</u></th>
+<th>VIV<u>IR</u></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yo</td>
+<td><code>Hablo</code></td>
+<td><code>Como</code></td>
+<td><code>Vivo</code></td>
+</tr>
+<tr>
+<td>Tu</td>
+<td><code>Hablas</code></td>
+<td><code>Comes</code></td>
+<td><code>Vives</code></td>
+</tr>
+<tr>
+<td>Èl/…</td>
+<td><code>Habla</code></td>
+<td><code>Come</code></td>
+<td><code>Vive</code></td>
+</tr>
+<tr>
+<td>Nos…</td>
+<td><code>Hablamos</code></td>
+<td><code>Comemos</code></td>
+<td><code>Vivimos</code></td>
+</tr>
+<tr>
+<td>Vos…</td>
+<td><code>Habláis</code></td>
+<td><code>Coméis</code></td>
+<td><code>Vivís</code></td>
+</tr>
+<tr>
+<td>Ellos/…</td>
+<td><code>Hablan</code></td>
+<td><code>Comen</code></td>
+<td><code>Viven</code></td>
+</tr>
+</tbody>
+</table>
+
+tunti-4::harjoitus---verbien-taivutus	<h1>Español- muistiinpanot</h1>
+<h2>Tunti 4</h2>
+<h3>Harjoitus - verbien taivutus</h3>
+	<table><thead>
+<tr>
+<th>ENTRAR</th>
+<th>SUBIR</th>
+<th>ABRIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Entro</code></td>
+<td><code>Subo</code></td>
+<td><code>Abro</code></td>
+</tr>
+<tr>
+<td><code>Entras</code></td>
+<td><code>Subes</code></td>
+<td><code>Abres</code></td>
+</tr>
+<tr>
+<td><code>Entra</code></td>
+<td><code>Sube</code></td>
+<td><code>Abre</code></td>
+</tr>
+<tr>
+<td><code>Entramos</code></td>
+<td><code>Subimos</code></td>
+<td><code>Abrimos</code></td>
+</tr>
+<tr>
+<td><code>Entráis</code></td>
+<td><code>Subís</code></td>
+<td><code>Abrís</code></td>
+</tr>
+<tr>
+<td><code>Entran</code></td>
+<td><code>Suben</code></td>
+<td><code>Abren</code></td>
+</tr>
+</tbody>
+</table>
+
+español---muistiinpanot::tunti	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+	
+tunti::demonstratiivipronominit	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Demonstratiivipronominit</h3>
+	<table><thead>
+<tr>
+<th>Tämä - nämä</th>
+<th>Se - Ne</th>
+<th>Tuo - Nuo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Este chico</code></td>
+<td><code>Ese chico</code></td>
+<td><code>Aquel chico</code></td>
+</tr>
+<tr>
+<td><code>Esta chica</code></td>
+<td><code>Esa chica</code></td>
+<td><code>Aquella chica</code></td>
+</tr>
+<tr>
+<td><code>Estos chicos</code></td>
+<td><code>Esos chicos</code></td>
+<td><code>Aquellos chicos</code></td>
+</tr>
+<tr>
+<td><code>Estas chicas</code></td>
+<td><code>Esas chicas</code></td>
+<td><code>Aquellas chicas</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Esta vs. Está  <code>Tämä vs. olla (-f)</code></p>
+</blockquote>
+<p>Tämä kirja <code>este libro</code></p>
+<p>Se kirja <code>ese libro</code></p>
+<p>Tuo kirja <code>aquel libro</code></p>
+<p>Mikä/mitä tämä on? =&gt; Se on… <code>Qué es esto? -&gt; Eso es ..</code></p>
+<p>Tämä on skandaali <code>Esto es un escándalo!</code></p>
+<p>Niin se on / Juuri niin <code>Eso es.</code></p>
+<p>Mitä/mitä se on? <code>Que es eso?</code></p>
+<table>
+<thead>
+<tr>
+<th>Este - aquí</th>
+<th>Ese - ahí</th>
+<th>Aquel - allí</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tässä, täällä<br/> (kuulijan kohdalla)</td>
+<td>Siinä, tuossa<br/>(kuulijan lähellä)</td>
+<td>Tuolla, siellä<br/>(kaukana puhujasta)</td>
+</tr>
+</tbody>
+</table>
+
+tunti::sanastot	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Sanastot</h3>
+	<h2><ahref="https://quizlet.com/429040236/uno-espanol-kappale-1-flash-cards/">Sanasto 1</a>
+<a href="https://quizlet.com/429171409/uno-espanol-kappale-2-flash-cards/">Sanasto 2</a>
+<a href="https://quizlet.com/429190128/uno-espanol-kappale-3-flash-cards/">Sanasto 3</a></h2>
+<h2><a href="https://quizlet.com/457059242/espanol-uno-kappale-6-flash-cards/">Sanasto 6</a>
+<a href="https://quizlet.com/_7k4hje?x=1jqt&amp;i=2ibwjt">Sanasto 7</a>
+<a href="https://quizlet.com/457556615/espanol-uno-kappale-8-flash-cards/">Sanasto 8</a></h2>
+<ul>
+<li></li>
+</ul>
+<h2><a href="https://quizlet.com/485785549/espanol-uno-kappale-11-flash-cards/">Sanasto 11</a></h2>
+<p><a href="https://quizlet.com/487487275/espanol-uno-kappale-13-flash-cards/">Sanasto 13</a></p>
+
+tunti::ennestään-tuntemattomat	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Ennestään tuntemattomat</h3>
+	<p>dirty<code>sucio/-a</code></p>
+<p>what about…? <code>Qué tal...</code></p>
+<p>expensive <code>caro/-a</code></p>
+<p>broken <code>roto-/a</code></p>
+<p>lock <code>cerradura</code></p>
+<p>closed <code>cerrado/-a</code></p>
+<p>open <code>abierto/-a</code></p>
+<p>vuoraemäntä <code>la casera</code></p>
+<p>sukulainen <code>relativo/-a</code></p>
+<blockquote>
+<p>¿no? == ¿ verdad?</p>
+</blockquote>
+<blockquote>
+<p>Pues, sí  <code>Well, yes</code></p>
+</blockquote>
+<blockquote>
+<p>isä, äiti, vanhemmat <code>padre, madre, padres</code></p>
+<p>vaari, mummu, isovanhemmat <code>abuelo, abuela, abuelos</code></p>
+</blockquote>
+
+tunti::omistamisen-ilmaisut	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Omistamisen ilmaisut</h3>
+	
+omistamisen-ilmaisut::verbi-tener	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Omistamisen ilmaisut</h3>
+<h4>verbi tener</h4>
+	<p>Onkoteillä koiraa? <code>Tenéis perro?</code></p>
+<p>Kyllä, meillä on koira <code>Sí, tenemos perro</code></p>
+<p>Ei, meillä ei ole koiraa <code>No, no tenemos perro</code></p>
+<blockquote>
+<p>^ Sääntö: <code>Artikkeli unohdetaan jos puhutaan omistamisesta</code></p>
+</blockquote>
+<p>Onko sinulla avaimet? <code>Tienes las llaves?</code></p>
+<p>Minulla on tytär <code>Tengo una hija</code></p>
+<blockquote>
+<p>^ Sääntö: <code>Artikkelia käytetään kun korostetaan lukua yksi</code></p>
+</blockquote>
+
+omistamisen-ilmaisut::de-genetiivi	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Omistamisen ilmaisut</h3>
+<h4>de-genetiivi</h4>
+	<p>Pekanhuone <code>la habitación de Pekka</code></p>
+<p>Lolan asunto <code>el piso de Lola</code></p>
+<p>Asunnon avain <code>la llave del piso</code></p>
+<p>Keittiön ikkunat <code>las ventanas de la cocina</code></p>
+<p>Opiskelijoiden asunnot <code>Los pisos de los estudiantes</code></p>
+<p>La hermana del novio de mi hija <code>Tyttäreni poikaystävän sisko</code></p>
+<blockquote>
+<p>^ Sääntö: <code>Määräistä artikkelia käytetään de-genetiivin yhteydessä</code></p>
+</blockquote>
+
+omistamisen-ilmaisut::posessiivipronominit	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Omistamisen ilmaisut</h3>
+<h4>posessiivipronominit</h4>
+	<table><thead>
+<tr>
+<th>My</th>
+<th><code>mi, mis</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yours</td>
+<td><code>tu, tus</code></td>
+</tr>
+<tr>
+<td>His/Her/Usted</td>
+<td><code>su, sus</code></td>
+</tr>
+<tr>
+<td>Ours</td>
+<td><code>nuestro/-a, nuestros/-as</code></td>
+</tr>
+<tr>
+<td>Yours</td>
+<td><code>vuestro/-a, vuestros/-as</code></td>
+</tr>
+<tr>
+<td>Their/Ustedes</td>
+<td><code>su, sus </code></td>
+</tr>
+</tbody>
+</table>
+
+español---muistiinpanot::tunti-joku	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+	
+tunti-joku::sijainteja	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>Sijainteja</h3>
+	<table><thead>
+<tr>
+<th>Here / täällä (cerca)</th>
+<th><code>Aquí/Acá</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>There (menos cerca)</td>
+<td><code>Ahí</code></td>
+</tr>
+<tr>
+<td>Over there (lejos)</td>
+<td><code>Allí / Allá</code></td>
+</tr>
+</tbody>
+</table>
+
+tunti-joku::y-vs.-e-(ja)	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>y Vs. e (ja)</h3>
+	<blockquote><p><s>Carlos y Inés</s> =&gt; Carlos e Inés =&gt; Inés y Carlos</p>
+</blockquote>
+<blockquote>
+<p>Pia es alta e inteligente =&gt; Pia es intelligente y alta</p>
+<p><em>Koitetaan välttää <u><strong>e</strong></u> käyttöä vaihtamalla sanajärjestystä</em></p>
+</blockquote>
+
+tunti-joku::con	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>con</h3>
+	<p>Chilicon carne</p>
+<table>
+<thead>
+<tr>
+<th>with me</th>
+<th><code>conmigo</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>with you</td>
+<td><code>contigo</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>con él/ella, con nosotros/-as, con vosotros/-as, con ellos/-as</p>
+</blockquote>
+<p>Do you want to dance with me? <code>Quieres bailar conmigo?</code></p>
+<p>​	=&gt; Yes, i want dance with you <code>Si, quiero bailar contigo.</code></p>
+
+tunti-joku::llevar-+-ajanmääre	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>Llevar + ajanmääre</h3>
+	<blockquote><p>Kun kerrotaan toiminnasta joka on alkanut menneisyydessä, mutta jatkuu edellen</p>
+</blockquote>
+<p>AR: Llevo, llevas, lleva, llevamos, lleváis, llevan</p>
+<p>Myös: take, carry</p>
+<p>Kuinka kauan <u>olet</u> (jo) <u>ollut</u> yliopistossa
+<code>Cuánto tiempo llevas en la universidad</code></p>
+<p><u>Olen ollut</u> täällä kolme vuotta
+<code>Llevo(s??) tres años aquí</code></p>
+<p>Olemme asuneet jo 10 vuotta täällä
+<code>(Ya) llevamos diez años aquí</code>
+<code>(Ya) llevamos aquí diez años.</code></p>
+<p>Llevar
+<code>take, carry TAI olla ollut + ajanmääre</code></p>
+<p>I have been more than 30 years in Finland
+<code>Llevo más de treinta (30) años en Finlandia</code></p>
+<p>I’ve been in university for two years
+<code>Llevo dos años en la universidad</code></p>
+<p>Kuule, kauanko olemme opiskelleet espanjaa?
+<code>Oye, cuánto tiempo llevamos estudiando español?</code></p>
+<p>​    =&gt; Let’s see, 5 hours already!
+​    <code>A ver... ¡llevamos ya cinco horas!</code></p>
+
+tunti-joku::ajanmääreitä	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>Ajanmääreitä</h3>
+	<p>today<code>hoy</code>
+yesterday <code>ayer</code>
+tomorrow <code>mañana</code>
+the day after tomorrow <code>pasado mañana</code>
+the day before yesterday <code>anteayer</code>
+next week <code>la semana que viene</code>
+last week <code>la samana pasada</code></p>
+<p>everyday <code>todos los días</code>
+always <code>siempre</code></p>
+<p>almost always <code>casi siempre</code>
+constantly <code>constantemente</code>
+often <code>muchas veces</code>
+rarely<code>pocas veces</code>
+regularly <code>regularmente</code></p>
+<p>never <code>nunca</code>
+ever <code>jamás</code></p>
+<p>almost never <code>casi nunca</code>
+heti, right now <code>ahora mismo</code>
+right now <code>en este momento</code>
+already <code>ya</code>
+now <code>ahora</code></p>
+<p>before <code>antes</code>
+soon <code>pronto</code>
+still/yet <code>aùn</code>
+not yet <code>aún no</code>
+late <code>tarde</code></p>
+
+tunti-joku::päivänajat	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>Päivänajat</h3>
+	<p>Aamulla,aamupäivällä
+<code>Por la mañana</code></p>
+<p>Keskipäivällä
+<code>a/al mediodía</code></p>
+<p>Iltapäivällä, alkuillasta
+<code>por la tarde</code></p>
+<p>Illalla, yöllä
+<code>por la noche</code></p>
+<p>Keskiyöllä
+<code>a medianoche</code></p>
+
+tunti-joku::kellonajat	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>Kellonajat</h3>
+	<p>Mihinkellonaikaan?
+A qué hora?</p>
+<p>Yhdeltä
+<code>A la una</code></p>
+<p>Puoli kahdeksalta
+<code>A las siete y media</code></p>
+<p>Onko sinulla kelloa
+<code>Tienes hora?</code></p>
+<p>Kello on yksi
+<code>Es la una</code></p>
+<p>Kello on viittä yli yksi
+<code>Es la una y cinco</code></p>
+<p>Kello on kymmentä vaille yksi
+<code>Es la una menos diez</code></p>
+<p>Kello on puoli kaksi
+<code>Es la una y media</code></p>
+<p>Kello on tasan viisi
+<code>Son las cinco en punto</code></p>
+<p>Kello on varttia yli kymmenen
+<code>Son las diez y cuarto</code></p>
+<p>Kello on kahtakymmentä vaille yksitoista
+<code>Son las once menos veinte</code></p>
+<hr>
+<p>seuraavana päivänä <code>al día siguiente</code>
+viime vuonna <code>en año pasado</code></p>
+<p>a veces <code>joskus, toisinaan</code>
+a ratos <code>silloin tällöin, toisinaan</code>
+de vez en cuando <code>silloin tällöin</code></p>
+<p>después de <code>jnk jälkeen</code>
+luego (de) <code>sitten, jälkeenpäin</code></p>
+
+tunti-joku::kysymyssanoja	<h1>Español- muistiinpanot</h1>
+<h2>Tunti joku</h2>
+<h3>Kysymyssanoja</h3>
+	<p>what<code>Qué</code>
+which  <code>Cuál/Cuáles</code>
+who <code>Quién/Quiénes</code>
+how much <code>Cuánto/Cuánta</code>
+how many <code>Cuántos/Cuántas</code>
+how <code>Cómo</code></p>
+<p>why <code>Por qué</code>
+for why (mitä varten) <code>Para qué</code>
+where <code>Dónde</code>
+to where <code>Adónde</code>
+from where <code>De dónde</code>
+when <code>Cuando</code></p>
+<blockquote>
+<p>Que: 1) mitä 2) mikä</p>
+</blockquote>
+<p>Mikä päivä tänään on
+<code>Qué dia es hoy?</code></p>
+<p>Mitä on rakkaus?
+<code>Qué es el amor?</code></p>
+<p>Mitä tapahtuu
+<code>Qué pasa?</code></p>
+<blockquote>
+<p>Cuál 1) mikä 2) kumpi</p>
+</blockquote>
+<p>Mikä on hänen ammattinsta?
+<code>Cuál es su profesion?</code></p>
+<p>Mikä on osoitteesi
+<code>Cuál es tu dirección?</code> [<code>direksion</code>]</p>
+<p>Kumman haluat?
+<code>Cuál quieres?</code></p>
+<table>
+<thead>
+<tr>
+<th><u>Mistä lähtien</u> olet opiskellut espanjaa?</th>
+<th><code>Desde cuándo estudias español?</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=&gt; Tammikuusta saakka</td>
+<td><code>Desde enero</code></td>
+</tr>
+<tr>
+<td>Mihin asti/saakka?</td>
+<td><code>Hasta cuándo</code></td>
+</tr>
+<tr>
+<td>Kuinka kauan?</td>
+<td><code>Cuánto tiempo</code></td>
+</tr>
+<tr>
+<td>Kuina kauan se kestää?</td>
+<td><code>Cuánto tiempo dura/hace?</code></td>
+</tr>
+</tbody>
+</table>
+<p>How long it takes?
+<code>Cuánto tiempo tarda?</code></p>
+<p>Kauanko kestää junalla Helsinkiin?
+<code>Cuánto tiempo tarda el tren a Helsinki</code></p>
+<blockquote>
+<p>Leval, durar, tardar</p>
+</blockquote>
+
+español---muistiinpanot::tunti	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+	
+tunti::käsky-/-imperatiivi	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Käsky / imperatiivi</h3>
+	<blockquote><p>Käsky saadaan ottamalla verbin 3. persoonamuoto</p>
+<p>Hablar = Puhua
+Habla =&gt; Puhu!</p>
+<p>Comer = syödä
+Come =&gt; Syö!</p>
+</blockquote>
+<p>ser <code>soy, eres, es, somos, sois, son</code>
+tener
+estar</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Epäsäännöllisiä verbejä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estar</td>
+<td><code>estoy, estás, está, estamos, estáis están</code></td>
+</tr>
+<tr>
+<td>Ser</td>
+<td><code>soy, eres, es, somos, sois, son</code></td>
+</tr>
+<tr>
+<td>Tener</td>
+<td><code>Tengo, tienes, tiene</code>, tenemos, tenéis, <code>tienen</code></td>
+</tr>
+<tr>
+<td>Saber</td>
+<td><code>sé</code> sabes, sabe, sabemos, sabéis, saben</td>
+</tr>
+<tr>
+<td>Ver</td>
+<td><code>Veo</code> ves, ve, vemos, veis, ven</td>
+</tr>
+<tr>
+<td>Hacer</td>
+<td><code>Hago</code>, haces, hace, hacemos, hacéis, hacen</td>
+</tr>
+<tr>
+<td>Salir</td>
+<td><code>Salgo</code> sales, sale, salimos, salís, salen</td>
+</tr>
+<tr>
+<td>Oír</td>
+<td><code>Oigo, oyes, oye</code> oímos, oís, <code>oyen</code></td>
+</tr>
+<tr>
+<td>Ir</td>
+<td><code>Voy</code> <code>vas, va, vamos, vais, van</code></td>
+</tr>
+<tr>
+<td>Dar</td>
+<td><code>Doy</code>, das, da, damos, dais, dan</td>
+</tr>
+<tr>
+<td>Traer</td>
+<td><code>Traigo</code>, traes, trae, traemos, traéis, traen</td>
+</tr>
+<tr>
+<td>Poner en</td>
+<td><code>Pongo</code>, pones, pone, ponemos, ponéis, ponen</td>
+</tr>
+</tbody>
+</table>
+<p>Estar  <code>olla</code>
+Ser <code>olla</code>
+Tener <code>olla ollakulla, omistaa / to have</code>
+Saber <code>tietää, osata</code>
+Ver  <code>nähdä</code>
+Hacer <code>tehdä</code>
+Salir  <code>lähteä (ulos), käydä ulkona, seurustella</code>
+Oír <code>kuulla</code>
+Ir <code>mennä</code>
+Dar <code>antaa</code>
+Traer <code>tuoda</code>
+Poner en <code>laittaa, asettaa</code></p>
+<table>
+<thead>
+<tr>
+<th>Kotiin</th>
+<th>Kotoa</th>
+<th>Kotona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a casa</code></td>
+<td><code>de casa</code></td>
+<td><code>en casa</code></td>
+</tr>
+</tbody>
+</table>
+
+käsky-/-imperatiivi::a-+-henkilöobjekti	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>Käsky / imperatiivi</h3>
+<h4>A + henkilöobjekti</h4>
+	<p>Huomennanäen/tapaan Carmenin
+<code>Mañana veo a Carmen</code></p>
+<p>Nyt näen auton
+<code>Ahora veo el coche</code></p>
+<p>Kuuntelen opettejaa
+<code>Escucho al profesor</code></p>
+<p>Kuuntelen ohjelman joka päivä
+<code>Escucho el programa todos los días</code></p>
+
+tunti::ir-+-a-+-infinitivo	<h1>Español- muistiinpanot</h1>
+<h2>Tunti</h2>
+<h3>IR + A + INFINITIVO</h3>
+	<blockquote><p>IR + A + INFINITIVO</p>
+<p>La gente <u>va a trabajar</u>
+=
+Ihmisiä menee töihin</p>
+</blockquote>
+<p>juuh</p>
+

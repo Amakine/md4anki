@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "file-system": "^2.2.2",
+    "html-minifier": "^4.0.0",
+    "markdown-it": "^12.0.4",
     "string-builder": "^0.1.8",
     "yargs": "^16.2.0"
   }
