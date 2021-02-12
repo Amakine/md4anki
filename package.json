@@ -1,0 +1,16 @@
+{
+  "name": "md_to_anki",
+  "version": "0.0.1",
+  "description": "Parse markdown file to TSV file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arttu Mäkinen",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "string-builder": "^0.1.8",
+    "yargs": "^16.2.0"
+  }
+}
