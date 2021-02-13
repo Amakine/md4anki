@@ -1,0 +1,32 @@
+~~ = skippaa ID:stä
+
+front vs .back
+front vs. clozee - all at once
+front vs. clozee - one at time - others hidden
+front vs. clozee - one at time - others visible
+
+by default hidden => H/T to show
+principle of least amount of information
+
+front vs. clozee - all at once
+
+
+
+front vs. clozee - reveal
+front vs. clozee - write
+
+---
+
+- Create deck
+- Remove deck
+- Rename deck
+
+
+Load from server:
+	- Markdown file listing
+		- Markdown file
+		- Training data
+	- Client:
+		- Parse cards from markdown
+		- Reparse cards when markdown changes (only the current)
+		- Reparce ALL cards 

@@ -14,9 +14,8 @@ require('yargs')
         parser.parse()       
     }
   )
-  .example('$0 funny_animals.md')
   .option('-md', {
-      type: 'boolean',
+      type: 'boolean',  
       description: 'keep as markdown (parses to html by default)'
   })
   .argv
