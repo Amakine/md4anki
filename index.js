@@ -1,4 +1,4 @@
-const CardParser = require('./card-parser')
+const { importFile } = require('./importer')
 
 const SUPPORTED_FILE_FORMATS = ['md', 'markdown']
 
@@ -10,8 +10,9 @@ require('yargs')
     () => {},
     (argv) => {
         const args = processArgs(argv)
-        parser = new CardParser(args)
-        parser.parse()       
+        // importer = new Importer(args)
+        // importer.import()       
+        importFile(args)
     }
   )
   .option('-md', {
