@@ -1,4 +1,7 @@
-const { importFile } = require('./importer')
+#!/usr/bin/env node
+
+
+const { parseFile } = require('./parser')
 
 const SUPPORTED_FILE_FORMATS = ['md', 'markdown']
 
@@ -9,10 +12,8 @@ require('yargs')
     'Converts .md to .tsv!',
     () => {},
     (argv) => {
-        const args = processArgs(argv)
-        // importer = new Importer(args)
-        // importer.import()       
-        importFile(args)
+        const args = processArgs(argv)      
+        parseFile(args)
     }
   )
   .option('-md', {

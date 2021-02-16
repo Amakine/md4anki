@@ -1,4 +1,14 @@
-~~ = skippaa ID:stä
+-md (skip parsing to HTML, linebreaks replaced with \\n
+-o:apkg (exports .apkg file with ready templates)
+-theme:none
+-incl:^#+ +
+-cm
+
+-template:none
+
+Files:
+	- 
+
 
 front vs .back
 front vs. clozee - all at once

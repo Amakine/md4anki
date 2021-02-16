@@ -88,6 +88,10 @@ Que tal? `What's up?`
 Cómo estás? `How are you?`
 Cómo te llamas? `What's your name?`
 
+Auto `El coche`
+
+
+
 ### Määräiset artikkelit
 
 |            | Yksikkö | Monikko |
@@ -144,7 +148,7 @@ Cómo te llamas? `What's your name?`
 
 
 
-#### Esimerkit
+#### ~ Esimerkit ~
 
 
 Olen suomalainen `Soy finlandes(a)`
@@ -152,6 +156,8 @@ Olen suomalainen `Soy finlandes(a)`
 Olen opiskelija `Soy estudiante`
 
 Olen Tampereelta `Soy de Tampere`
+
+---
 
 Olen espanjan opettaja `Soy profesor de Español`
 
@@ -163,13 +169,15 @@ Olen pitkä `Soy alto`
 
 Talo on valkoinen `La casa es blanca`
 
-
+---
 
 Madrid on Espanjan pääkaupunki
-`Madrid es la capital de España` (`place of origin`)
+`Madrid es la capital de España` (place of origin) 
+
+vs.
 
 Madrid on Espanjassa
-`Madrid está en España` (`location`)  
+`Madrid está en España` (location)  
 
   
 
@@ -345,7 +353,7 @@ There's no dishwasher
 
 
 
-### Estar - olla / sijaita
+### Estar (olla / sijaita)
 
 | Olen   | `Estoy`                      |
 | ------ | ---------------------------- |
@@ -388,7 +396,7 @@ Miten hän voi `Cómo esta?`
 
 Millainen hän on `Cómo es?`
 
-Miguel is at home `Miguel esta en Casa`
+Miguel is at home `Miguel está en Casa`
 
 Te olette Porissa `Vosotros estáis en Pori`
 
@@ -404,7 +412,7 @@ VS.
 <u>**The red car**</u> is on the street
 `El coche rojo está en la calle.`
 
-### Tener - olla jollakulla, omistaa (to have)
+### Tener  (olla jollakulla, omistaa, to have)
 
 | I have            | `Tengo`                        |
 | ----------------- | ------------------------------ |
@@ -419,7 +427,7 @@ VS.
 #### Tener esimerkit
 
 Do you have a car? `Tienes coche?`
-Do, I do not. `No, no tengo coche`
+No, I do not. `No, no tengo coche`
 
 I have a brother `Tengo un hermano`
 
@@ -553,7 +561,7 @@ Kaukana `Lejos (de)`
 
 Vastapäätä `Enfrente (de)`
 
-
+---
 
 päässä/lopussa `Al final (de)`
 
@@ -643,7 +651,7 @@ Otammeko toisen kahvin?
 | `Estas chicas` | `Esas chicas` | `Aquellas chicas` |
 > Esta vs. Está  `Tämä vs. olla (-f)`
 
-
+---
 
 Tämä kirja `este libro`
 
@@ -659,7 +667,7 @@ Niin se on / Juuri niin `Eso es.`
 
 Mitä/mitä se on? `Que es eso?`
 
-
+---
 
 | Este - aquí                            | Ese - ahí                            | Aquel - allí                           |
 | -------------------------------------- | ------------------------------------ | -------------------------------------- |
@@ -695,6 +703,8 @@ expensive `caro/-a`
 
 broken `roto-/a`
 
+---
+
 lock `cerradura`
 
 closed `cerrado/-a`
@@ -726,7 +736,7 @@ Kyllä, meillä on koira `Sí, tenemos perro`
 Ei, meillä ei ole koiraa `No, no tenemos perro`
 > ^ Sääntö: `Artikkeli unohdetaan jos puhutaan omistamisesta`
 
-
+---
 
 Onko sinulla avaimet? `Tienes las llaves?`
 
@@ -774,9 +784,9 @@ La hermana del novio de mi hija `Tyttäreni poikaystävän sisko`
 | Over there (lejos)    | `Allí / Allá` |
 
 ### y Vs. e (ja)
-> ~~Carlos y Inés~~ => Carlos e Inés => Inés y Carlos
+> ~~Carlos y Inés~~ => `Carlos e Inés` => `Inés y Carlos`
 
-> Pia es alta e inteligente => Pia es intelligente y alta
+> Pia es alta e inteligente => `Pia es intelligente y alta`
 >
 > *Koitetaan välttää <u>**e**</u> käyttöä vaihtamalla sanajärjestystä*
 
@@ -804,7 +814,7 @@ AR: Llevo, llevas, lleva, llevamos, lleváis, llevan
 
 Myös: take, carry
 
-
+---
 
 Kuinka kauan <u>olet</u> (jo) <u>ollut</u> yliopistossa
 `Cuánto tiempo llevas en la universidad`
@@ -812,12 +822,16 @@ Kuinka kauan <u>olet</u> (jo) <u>ollut</u> yliopistossa
 <u>Olen ollut</u> täällä kolme vuotta
 `Llevo(s??) tres años aquí`
 
+---
+
 Olemme asuneet jo 10 vuotta täällä
 `(Ya) llevamos diez años aquí`
 `(Ya) llevamos aquí diez años.`
 
 Llevar
 `take, carry TAI olla ollut + ajanmääre`
+
+---
 
 I have been more than 30 years in Finland
 `Llevo más de treinta (30) años en Finlandia`
@@ -841,6 +855,8 @@ the day before yesterday `anteayer`
 next week `la semana que viene`
 last week `la samana pasada`
 
+---
+
 everyday `todos los días`
 always `siempre`
 
@@ -850,6 +866,8 @@ often `muchas veces`
 rarely`pocas veces`
 regularly `regularmente`
 
+---
+
 never `nunca`
 ever `jamás`
 
@@ -858,6 +876,8 @@ heti, right now `ahora mismo`
 right now `en este momento`
 already `ya`
 now `ahora`
+
+---
 
 before `antes`
 soon `pronto`
@@ -887,7 +907,7 @@ Keskiyöllä
 ### Kellonajat
 
 Mihin kellonaikaan?
-A qué hora?
+`A qué hora?`
 
 Yhdeltä
 `A la una`
@@ -900,6 +920,8 @@ Onko sinulla kelloa
 
 Kello on yksi
 `Es la una`
+
+---
 
 
 
@@ -920,8 +942,6 @@ Kello on varttia yli kymmenen
 
 Kello on kahtakymmentä vaille yksitoista
 `Son las once menos veinte`
-
-
 
 
 
@@ -947,12 +967,16 @@ how much `Cuánto/Cuánta`
 how many `Cuántos/Cuántas`
 how `Cómo`
 
+---
+
 why `Por qué`
 for why (mitä varten) `Para qué`
 where `Dónde`
 to where `Adónde`
 from where `De dónde`
 when `Cuando`
+
+#### Qué?
 
 > Que: 1) mitä 2) mikä
 
@@ -965,6 +989,8 @@ Mitä on rakkaus?
 Mitä tapahtuu
 `Qué pasa?`
 
+#### Cuál
+
 > Cuál 1) mikä 2) kumpi
 
 Mikä on hänen ammattinsta?
@@ -976,12 +1002,16 @@ Mikä on osoitteesi
 Kumman haluat?
 `Cuál quieres?`
 
+#### Ajanmääreitä ja kysymyksiä
+
 | <u>Mistä lähtien</u> olet opiskellut espanjaa? | `Desde cuándo estudias español?` |
 | ---------------------------------------------- | ------------------------------ |
 | => Tammikuusta saakka                          | `Desde enero`                  |
 | Mihin asti/saakka?                             | `Hasta cuándo`                 |
 | Kuinka kauan?                                  | `Cuánto tiempo`                |
 | Kuina kauan se kestää?                         | `Cuánto tiempo dura/hace?`   |
+
+---
 
 How long it takes?
  `Cuánto tiempo tarda?` 
@@ -1003,9 +1033,7 @@ Kauanko kestää junalla Helsinkiin?
 > Comer = syödä
 > Come => Syö!
 
-ser `soy, eres, es, somos, sois, son`
-tener 
-estar
+### Epäsäännöllisiä verbejä
 
 |          | Epäsäännöllisiä verbejä                           |
 | -------- | ------------------------------------------------- |
@@ -1021,6 +1049,8 @@ estar
 | Dar      | `Doy`, das, da, damos, dais, dan                  |
 | Traer    | `Traigo`, traes, trae, traemos, traéis, traen     |
 | Poner en | `Pongo`, pones, pone, ponemos, ponéis, ponen      |
+
+---
 
 Estar  `olla`
 Ser `olla`
@@ -1067,6 +1097,3 @@ Kuuntelen ohjelman joka päivä
 > 			=
 > Ihmisiä menee töihin
 
- 
-
-juuh
