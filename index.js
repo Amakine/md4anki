@@ -3,7 +3,8 @@
 
 const { parseFile } = require('./parser')
 
-const SUPPORTED_FILE_FORMATS = ['md', 'markdown']
+const SUPPORTED_INPUT_FORMATS = ['md', 'markdown']
+const SUPPORTED_OUTPUT_FORMATS = ['tsv', 'apkg']
 
 
 require('yargs')
@@ -30,51 +31,58 @@ require('yargs')
    * @returns {object} modified version of the received argv object
    * @private
    */
-function processArgs(argv) {
-    let { source, output, md } = argv
+function processArgs({source, output, md}) {
 
-    if (!source) {
-        console.log('Source not defined!');
-        return;
-    }
-    const parts = source.split('.')
-    const sourceName = parts[0];
-    const fileType = parts[parts.length-1]
-    const hasFileType = (parts.length >= 2)
-    const hasSupportedFileType = (
-        hasFileType
-        &&
-        SUPPORTED_FILE_FORMATS.includes(fileType)
+    const sourcePath = source
+    const outputPath = output
+    const parseToMarkdown = md
+
+    exitProcessIf(
+        (!sourcePath),
+        'Source not defined!'
+    )
+
+    exitProcessIf(
+         ( sourcePath.split('.').length > 2
+        || outputPath.split('.').length > 2) ,
+        "Filepaths with multiple periods (\".\") are not supported"
+    )    
+
+    const parts = sourcePath.split('.')
+    const sourceFileType = (parts.length <= 1) ? 'md' : parts[1]
+    const sourcePathNoFileType = parts[0]
+    
+    exitProcessIf(
+        (!SUPPORTED_FILE_FORMATS.includes(sourceFileType)),
+        `File "${sourcePath}" has unsupported filetype!`
     )
     
-    if (hasFileType && !hasSupportedFileType) {
-        console.log(`File "${source}" has unsupported filetype!`);
-        process.exit(1)
+    const outputParts = outputPath.split('.')
+    if (!outputPath) {
+        outputPath =  sourcePathNoFileType + '.tsv'
     }
-
-    if (!hasFileType)
-        source += '.md'
-    
-
-    if (!output) {
-        output = sourceName + '.tsv'
+    else if (outputParts.length <= 1) {
+            outputPath += '.tsv'
     }
-    else if (!output.endsWith('.tsv')) {
-        if (!output.includes('.'))
-            output += '.tsv'
-        else
-            console.log('WARNING: Unsupported output format, output might not be what you wanted!'); 
-    }
+    else  { // if user provided output path with file type
+        const outputType = outputParts[1]
 
-    //console.log(source, output);
+        exitProcessIf(
+            (!SUPPORTED_OUTPUT_FORMATS.includes(outputType)),
+            'WARNING: Unsupported output format, output might not be what you wanted!'
+        )
+    }
 
     return {
-        //...argv,
-        source,
-        output,
-        md: Boolean(md)
+        sourcePath,
+        outputPath,
+        parseToMarkdown: Boolean(parseToMarkdown)
     }
 }
 
-//mdcards spanish.md -o spanish.tsv
+function exitProcessIf(bool, errorMessage) {
+    console.log(errorMessage)
+    process.exit(1)
+}
+
 
