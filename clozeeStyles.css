@@ -1,0 +1,61 @@
+#write .typeGood {
+	background-color: rgb(0,0,0,0);
+    border-bottom: 5px solid green;
+}
+
+#write .typeBad {
+    background-color: rgb(250, 0, 0, 50%);
+}
+#write .typeMissed {
+    background-color: rgb(0,0,0,0); 
+}
+
+#write .card input {
+    border: none !important;
+    width: 250px;
+    max-width: 250px;
+    color: white;
+}
+
+#write *:focus {
+    outline: none;
+}
+
+#write #current-clozee {
+    color: white;
+}
+#write .clozee.hidden-clozee {
+    color: rgb(0,0,0,0);
+}
+#write .clozee.hidden-clozee:hover {
+    color: white;
+}
+
+#write .clozee {
+    border: 1px solid white !important;
+	border-color: white;
+    text-align: center;
+	display: inline-block;
+}
+#write blockquote {
+	margin-left: 0;
+}
+#write table {
+	margin: 0 auto;
+}
+
+#write .card {
+    text-align: center !important;
+    font-size: 20px;
+}
+
+:root {
+	--input-color: rgb(29, 31, 35);
+}
+
+input {
+	background-color: var(--input-color) !important;
+	border: 0px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
